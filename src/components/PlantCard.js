@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState }from "react";
 
-function PlantCard({ key, name, image, price }) {
+function PlantCard({ name, image, price }) {
+  const [isInStock, setIsInStock] = useState(null);
+
   return (
     <li className="card">
       <img src={image} alt={name} />
       <h4>{name}</h4>
       <p>Price: {price}</p>
-      {true ? (
-        <button className="primary">In Stock</button>
+      {isInStock ? (
+        <button onClick={() => setIsInStock(false)} className="primary">In Stock</button>
       ) : (
-        <button>Out of Stock</button>
+        <button onClick={() => setIsInStock(true)}>Out of Stock</button>
       )}
     </li>
   );
