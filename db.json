@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Swiss cheese ",
+      "image": "https://assets.heart.co.uk/2018/14/house-plants-3-1523446012.jpg",
+      "price": "35",
+      "id": 8
     }
   ]
 }
